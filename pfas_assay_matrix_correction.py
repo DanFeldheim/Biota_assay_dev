@@ -657,7 +657,8 @@ class Calculate_Concs():
             # st.write(rfu)
             
             # Get raw rfu values to check for below/above LLOD
-            raw_rfu = df[raw_rfu_col].astype(float).to_numpy()
+            # Use this if you want the ULOD/LLOD called by uncorrected RFU values
+            # raw_rfu = df[raw_rfu_col].astype(float).to_numpy()
           
             # Start with everything in the np array invalid (NaN) until proven otherwise
             conc = np.full(rfu.shape, np.nan, dtype=float)
@@ -666,8 +667,14 @@ class Calculate_Concs():
             flag = np.full(rfu.shape, "PFAS Detected in Quantifiable Range", dtype=object)
     
             # If rfu <= the low and high range, the np array gets reset
-            below = raw_rfu <= low
-            above = raw_rfu >= high
+            # These lines use the uncorrected RFU values to determine whether sample
+            # is below/above LODs
+            # below = raw_rfu <= low
+            # above = raw_rfu >= high
+
+            # These lines use the corrected RFU values
+            below = rfu <= low
+            above = rfu >= high
             
             # Reset flags based upon below and above
             flag[below] = "PFAS Detected Above Quantifiable Range"
