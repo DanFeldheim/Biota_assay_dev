@@ -84,7 +84,7 @@ class Flow_Control():
                                             'pfas_MW':413.06,
                                             
                                             'RFU_LOD':5121.000
-                                            }
+                                            },
                                 
                                 #Version 3: 07-01-2026
                                 '07012026':{
