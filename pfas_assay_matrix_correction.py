@@ -157,6 +157,8 @@ class Flow_Control():
             return
         # Get version number so params dict can be accessed
         valid_version = st.session_state["valid_version_number"]
+
+        st.write(valid_version)
         
         # Comment out to activate the block above
         # valid_version = '07012026'
