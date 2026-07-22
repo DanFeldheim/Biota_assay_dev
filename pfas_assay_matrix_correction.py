@@ -117,8 +117,8 @@ class Flow_Control():
                                                 
                                                 # Standard concentrations in nM
                                                 'std1_set_conc':0,
-                                                'std2_set_conc':12077,
-                                                'std3_set_conc':12077,
+                                                'std2_set_conc':233558,
+                                                'std3_set_conc':233558,
             
                                                 'pfas_MW':428.16,
                                                 
