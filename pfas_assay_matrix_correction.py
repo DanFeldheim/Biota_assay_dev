@@ -932,7 +932,7 @@ class Display_Results():
                         font-size: 20px;
                         font-weight: bold;
                         text-align: center;
-                        width: 1000px;
+                        width: 800px;
                         max-width: 100%;
                         box-sizing: border-box;
                     ">
