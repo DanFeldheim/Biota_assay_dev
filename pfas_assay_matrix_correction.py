@@ -1120,7 +1120,7 @@ class Display_Results():
                 height = 38 + visible_rows * 35
                            
                 replicates_data_df = st.data_editor(replicates_df, 
-                                                    use_container_width=False,
+                                                    use_container_width=True,
                                                     num_rows="static",
                                                     hide_index=True,
                                                     height=height,
