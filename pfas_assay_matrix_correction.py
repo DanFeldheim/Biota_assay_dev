@@ -920,7 +920,7 @@ class Display_Results():
               # margin: 0;'>Results Tables</p>",
               # unsafe_allow_html=True)
         
-                             
+        st.write('')                     
         st.markdown(
                     """
                     <div style="
