@@ -933,12 +933,15 @@ class Display_Results():
                             font-size: 20px;
                             font-weight: bold;
                             text-align: center;
+                            width: 500px;
+                            max-width: 100%;
+                            box-sizing: border-box;
                         ">
-                            Results Tables
+                            Primer Processing and Quality Summary
                         </div>
                         """,
                         unsafe_allow_html=True
-                    )
+                      )
 
         
             
