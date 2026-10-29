@@ -920,28 +920,27 @@ class Display_Results():
               # margin: 0;'>Results Tables</p>",
               # unsafe_allow_html=True)
         
-        col1, col2 = st.columns([1,0.5])
-        with col1:                        
-            st.markdown(
-                        """
-                        <div style="
-                            background-color: #1764A0;
-                            color: white;
-                            padding: 10px 15px;
-                            border-radius: 5px;
-                            margin-bottom: 10px;
-                            font-size: 20px;
-                            font-weight: bold;
-                            text-align: center;
-                            width: 500px;
-                            max-width: 100%;
-                            box-sizing: border-box;
-                        ">
-                            Results Tables
-                        </div>
-                        """,
-                        unsafe_allow_html=True
-                      )
+                             
+        st.markdown(
+                    """
+                    <div style="
+                        background-color: #1764A0;
+                        color: white;
+                        padding: 10px 15px;
+                        border-radius: 5px;
+                        margin-bottom: 10px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        text-align: center;
+                        width: 1000px;
+                        max-width: 100%;
+                        box-sizing: border-box;
+                    ">
+                        Results Tables
+                    </div>
+                    """,
+                    unsafe_allow_html=True
+                  )
 
         
             
