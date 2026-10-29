@@ -915,10 +915,30 @@ class Display_Results():
         edited_replicates_tables = {}
         
         # Write header
-        st.markdown(f"<p style='color: DarkBlue; \
-              font-size: 24px; \
-              margin: 0;'>Results Tables</p>",
-              unsafe_allow_html=True)
+        # st.markdown(f"<p style='color: DarkBlue; \
+              # font-size: 24px; \
+              # margin: 0;'>Results Tables</p>",
+              # unsafe_allow_html=True)
+
+        st.markdown(
+                    """
+                    <div style="
+                        background-color: #1764A0;
+                        color: white;
+                        padding: 10px 15px;
+                        border-radius: 5px;
+                        margin-bottom: 10px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        text-align: center;
+                    ">
+                        Results Tables
+                    </div>
+                    """,
+                    unsafe_allow_html=True
+                )
+
+        
             
         # st.write(all_results_dict)
         # st.stop()
