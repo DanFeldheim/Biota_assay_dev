@@ -1301,6 +1301,7 @@ class Display_Results():
                           data=replicates_csv_str,
                           file_name="replicates_table.csv",
                           mime="text/csv",
+                          disabled=not combined_replicates_results,
                           )
         
         
