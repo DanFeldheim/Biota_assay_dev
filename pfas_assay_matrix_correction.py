@@ -1213,7 +1213,7 @@ class Display_Results():
             replicates_df[replicate_cols] = replicates_df[replicate_cols].round(2)
             
             # Identify samples that do not have exactly 3 replicates
-            invalid_samples = replicates_df["Replicates Run"] != 3
+            invalid_samples = replicates_df["Replicates Run"] < 3
             
             # Display an error for each sample without exactly 3 replicates
             for sample_name in replicates_df.loc[invalid_samples, "Sample Name"]:
