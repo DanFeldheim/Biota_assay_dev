@@ -1253,7 +1253,7 @@ class Display_Results():
                     #         )
                     
                     st.error(f"Less than 2 replicates were found for sample {sample_name}. "
-                             "Please check your uploaded file or run at least 3 sample aliquots."
+                             "Please check your uploaded file or run at least 2 sample aliquots."
                             )
             
             # Remove those samples from the replicate analysis table
